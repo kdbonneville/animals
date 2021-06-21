@@ -17,7 +17,7 @@ android {
     buildToolsVersion "30.0.3"
 
     defaultConfig {
-        applicationId "edu.cnm.deepdive.animals"
+        applicationId "edu.cnm.deepdive.animals13"
         minSdkVersion 24
         targetSdkVersion 30
         versionCode 1

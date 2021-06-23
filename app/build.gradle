@@ -2,13 +2,13 @@ plugins {
     id 'com.android.application'
 }
 
-static def getProperty(String propertyFile, String propertyName) {
+static String getProperty(String propertyFile, String propertyName) {
     Properties properties = new Properties()
     properties.load(new FileInputStream(propertyFile))
     return properties.getProperty(propertyName)
 }
 
-static def quoted(String value) {
+static String quoted(String value) {
     return "\"$value\""
 }
 
@@ -60,7 +60,7 @@ dependencies {
     implementation 'com.squareup.picasso:picasso:2.71828'
 
     // Gson (JSON parser) library
-    implementation 'com.google.code.gson:gson:2.8.6'
+    implementation 'com.google.code.gson:gson:2.8.7'
 
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.2'
